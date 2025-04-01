@@ -23,5 +23,6 @@ void add(){
     char str[112];
     sprintf(str,"%s,%s\n",date,event); //concatenating date and time
     fputs(str,ptr); //puting data into the file
+  
     fclose(ptr);
 }

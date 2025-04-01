@@ -21,14 +21,14 @@ void removing() {
 
     int found = 0;
     while (fgets(line, sizeof(line), file) != NULL) { // Read file line by line
-        if (strstr(line, word) != NULL) { // Check if the line contains the word
+        if (strstr(line, word) != NULL) { // Check if the line contains word
             found = 1;
             fprintf(temp, "\n"); // Replace the line with an empty space
         } else {
-            fprintf(temp, "%s", line); // Copy other lines as they are
+            fprintf(temp, "%s", line); // Copy other lines as it is
         }
     }
-
+  
     fclose(file);
     fclose(temp);
 
