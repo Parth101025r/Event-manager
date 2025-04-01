@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include<string.h>
 #include"adding.h"
+#include"removing.h"
 int main(){
-    add();
+    removing();
     return 0;
 }

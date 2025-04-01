@@ -7,7 +7,7 @@ void add(){
         printf("Error opening file");
         return;  
     }
-    char date[10], event[100];
+    char date[12], event[100];
     fseek(ptr, 0, SEEK_END);  //checking if file is empty
     if (ftell(ptr) == 0) {
         fputs("date, name\n", ptr); 
